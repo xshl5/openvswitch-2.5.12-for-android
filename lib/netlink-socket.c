@@ -123,7 +123,7 @@ nl_sock_create(int protocol, struct nl_sock **sockp)
         int save_errno = errno;
         errno = 0;
 
-        max_iovs = sysconf(_SC_UIO_MAXIOV);
+        max_iovs = sysconf(_SC_IOV_MAX /*_SC_UIO_MAXIOV*/);
         if (max_iovs < _XOPEN_IOV_MAX) {
             if (max_iovs == -1 && errno) {
                 VLOG_WARN("sysconf(_SC_UIO_MAXIOV): %s", ovs_strerror(errno));
