@@ -1,3 +1,8 @@
+Buld for android
+============
+export ANDROID_NDK=/home/xshl5/disk_5/android_ndk/android-ndk-r15c
+./build_ovs.sh
+
 Open vSwitch
 ============
 
