@@ -1037,6 +1037,9 @@ test_tree_shape_exhaustively(struct expr *expr, struct shash *symtab,
 }
 
 #ifndef _WIN32
+#ifndef WAIT_ANY
+# define WAIT_ANY  (-1)
+#endif
 static void
 wait_pid(pid_t *pids, int *n)
 {
