@@ -1,0 +1,11 @@
+prefix=/home/xshl5/workspace/openvswitch-2.5.12/build
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libopenvswitch
+Description: Open vSwitch library
+Version: 2.5.12
+Libs: -L${libdir} -lopenvswitch
+Libs.private: -latomic -lm 
+Cflags: -I${includedir}
