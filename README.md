@@ -1,5 +1,9 @@
 Building for android
 ============
+apt install -y autoconf libtool
+
+./boot.sh
+
 export ANDROID_NDK=/home/xshl5/disk_5/android_ndk/android-ndk-r15c
 
 ./build_ovs.sh
